@@ -5,7 +5,9 @@ public class Math {
 	// 명완 빼기
 	
 	// 지수 곱하기
-	
+	public int multiple(int x, int y) {
+		return x * y;
+	}
 	// 정빈 나누기
 	
 	// 민아 나머지
