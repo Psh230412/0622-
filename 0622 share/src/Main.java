@@ -5,5 +5,8 @@ public class Main {
 		System.out.println("Hello World");
 		
 		// 박상현
+		// 성지수
+		// 김명완
+		// 박민
 	}
 }
