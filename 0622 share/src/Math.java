@@ -22,8 +22,8 @@ public class Math {
 	}
 	// 민아 나머지
 	public int remain(int a , int b){
-		int dividend = 17; 
-		int divisor = 5; 
+		int dividend = a; 
+		int divisor = b; 
 		
 		int remainder = dividend % divisor; 
 		return remainder;
