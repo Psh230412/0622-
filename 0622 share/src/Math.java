@@ -8,7 +8,9 @@ public class Math {
 		return a+b;
 	}
 	// 명완 빼기
-	
+	private int minus(int a,int b) {
+		return a-b;
+	}
 	// 지수 곱하기
 	public int multiple(int x, int y) {
 		return x * y;
