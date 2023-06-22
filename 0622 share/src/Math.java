@@ -1,15 +1,5 @@
 
 public class Math {
-
-	public static void main(String[] args) {
-		int dividend = 17; 
-		int divisor = 5; 
-
-		int remainder = dividend % divisor; //김민아 나머지 계산
-
-		System.out.println("나머지: " + remainder);
-  }
-
 	public void printHelloWorld() {
 		System.out.println("Hello World");
 
@@ -31,5 +21,12 @@ public class Math {
 		System.out.println(num1 / num2);
 	}
 	// 민아 나머지
+	public int remain(int a , int b){
+		int dividend = 17; 
+		int divisor = 5; 
+		
+		int remainder = dividend % divisor; 
+		return remainder;
+	}
 	
 }
