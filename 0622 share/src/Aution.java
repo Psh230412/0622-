@@ -11,7 +11,7 @@ import javax.swing.Timer;
 import javax.swing.border.EmptyBorder;
 
 public class Aution extends JFrame {
-
+//
 	private JPanel contentPane;
 
 	/**
