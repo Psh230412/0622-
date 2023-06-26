@@ -17,24 +17,16 @@ public class Mypage extends JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Mypage frame = new Mypage();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+		DataBase data = new DataBase();
+		new Mypage(data);
 	}
 
 	/**
 	 * Create the frame.
 	 */
-	public Mypage() {
+	public Mypage(DataBase data) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 737, 572);
+		setBounds(0, 0, 800, 700);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -44,6 +36,8 @@ public class Mypage extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("user_name");
 		lblNewLabel.setBounds(107, 68, 86, 15);
+		lblNewLabel.setText(data.getCurrentUser().getName());
+		
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("등록물품 리스트");
@@ -67,8 +61,8 @@ public class Mypage extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new Registration();
-				setVisible(false);
+//				new Registration();
+//				setVisible(false);
 			}
 		});
 		btnNewButton_1.setBounds(299, 68, 120, 23);
@@ -79,7 +73,7 @@ public class Mypage extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new Aution();
+				new AuctionFrame(data);
 				setVisible(false);
 			}
 		});
