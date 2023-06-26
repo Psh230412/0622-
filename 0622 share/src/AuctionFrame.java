@@ -290,7 +290,7 @@ public class AuctionFrame extends JFrame {
 			case 0: {
 				lblPrice1.setText(Integer.toString(timerTest.selectProduct().get(0).getProductPriceNow()));
 				String productName1 = timerTest.selectProduct().get(0).getProductName();
-				lblImage1.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName1 + ".jpg")));
+				lblImage1.setIcon(iconSize(new ImageIcon("images/" + productName1 + ".jpg")));
 				String result1 = duration(timerTest.selectProduct().get(0).getEndTime(), now);
 				lblTime1.setText(result1);
 				break;
@@ -298,7 +298,7 @@ public class AuctionFrame extends JFrame {
 			case 1: {
 				lblPrice2.setText(Integer.toString(timerTest.selectProduct().get(1).getProductPriceNow()));
 				String productName2 = timerTest.selectProduct().get(1).getProductName();
-				lblImage2.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName2 + ".jpg")));
+				lblImage2.setIcon(iconSize(new ImageIcon("images/" + productName2 + ".jpg")));
 				String result2 = duration(timerTest.selectProduct().get(1).getEndTime(), now);
 				lblTime2.setText(result2);
 				break;
@@ -306,7 +306,7 @@ public class AuctionFrame extends JFrame {
 			case 2: {
 				lblPrice3.setText(Integer.toString(timerTest.selectProduct().get(2).getProductPriceNow()));
 				String productName3 = timerTest.selectProduct().get(2).getProductName();
-				lblImage3.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName3 + ".jpg")));
+				lblImage3.setIcon(iconSize(new ImageIcon("images/" + productName3 + ".jpg")));
 				String result3 = duration(timerTest.selectProduct().get(2).getEndTime(), now);
 				lblTime3.setText(result3);
 				break;
@@ -314,7 +314,7 @@ public class AuctionFrame extends JFrame {
 			case 3: {
 				lblPrice4.setText(Integer.toString(timerTest.selectProduct().get(3).getProductPriceNow()));
 				String productName4 = timerTest.selectProduct().get(3).getProductName();
-				lblImage4.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName4 + ".jpg")));
+				lblImage4.setIcon(iconSize(new ImageIcon("images/" + productName4 + ".jpg")));
 				String result4 = duration(timerTest.selectProduct().get(3).getEndTime(), now);
 				lblTime4.setText(result4);
 				break;
@@ -322,7 +322,7 @@ public class AuctionFrame extends JFrame {
 			case 4: {
 				lblPrice5.setText(Integer.toString(timerTest.selectProduct().get(4).getProductPriceNow()));
 				String productName5 = timerTest.selectProduct().get(4).getProductName();
-				lblImage5.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName5 + ".jpg")));
+				lblImage5.setIcon(iconSize(new ImageIcon("images/" + productName5 + ".jpg")));
 				String result5 = duration(timerTest.selectProduct().get(4).getEndTime(), now);
 				lblTime5.setText(result5);
 				break;
@@ -330,7 +330,7 @@ public class AuctionFrame extends JFrame {
 			case 5: {
 				lblPrice6.setText(Integer.toString(timerTest.selectProduct().get(5).getProductPriceNow()));
 				String productName6 = timerTest.selectProduct().get(5).getProductName();
-				lblImage6.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName6 + ".jpg")));
+				lblImage6.setIcon(iconSize(new ImageIcon("images/" + productName6 + ".jpg")));
 				String result6 = duration(timerTest.selectProduct().get(5).getEndTime(), now);
 				lblTime6.setText(result6);
 				break;
@@ -338,7 +338,7 @@ public class AuctionFrame extends JFrame {
 			case 6: {
 				lblPrice7.setText(Integer.toString(timerTest.selectProduct().get(6).getProductPriceNow()));
 				String productName7 = timerTest.selectProduct().get(6).getProductName();
-				lblImage7.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName7 + ".jpg")));
+				lblImage7.setIcon(iconSize(new ImageIcon("images/" + productName7 + ".jpg")));
 				String result7 = duration(timerTest.selectProduct().get(6).getEndTime(), now);
 				lblTime7.setText(result7);
 				break;
@@ -346,7 +346,7 @@ public class AuctionFrame extends JFrame {
 			case 7: {
 				lblPrice8.setText(Integer.toString(timerTest.selectProduct().get(7).getProductPriceNow()));
 				String productName8 = timerTest.selectProduct().get(7).getProductName();
-				lblImage8.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName8 + ".jpg")));
+				lblImage8.setIcon(iconSize(new ImageIcon("images/" + productName8 + ".jpg")));
 				String result8 = duration(timerTest.selectProduct().get(7).getEndTime(), now);
 				lblTime8.setText(result8);
 				break;
@@ -354,7 +354,7 @@ public class AuctionFrame extends JFrame {
 			case 8: {
 				lblPrice9.setText(Integer.toString(timerTest.selectProduct().get(8).getProductPriceNow()));
 				String productName9 = timerTest.selectProduct().get(8).getProductName();
-				lblImage9.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName9 + ".jpg")));
+				lblImage9.setIcon(iconSize(new ImageIcon("images/" + productName9 + ".jpg")));
 				String result9 = duration(timerTest.selectProduct().get(8).getEndTime(), now);
 				lblTime9.setText(result9);
 				break;
@@ -362,7 +362,7 @@ public class AuctionFrame extends JFrame {
 			case 9: {
 				lblPrice10.setText(Integer.toString(timerTest.selectProduct().get(9).getProductPriceNow()));
 				String productName10 = timerTest.selectProduct().get(9).getProductName();
-				lblImage10.setIcon(iconSize(new ImageIcon("E:\\사진테스트\\" + productName10 + ".jpg")));
+				lblImage10.setIcon(iconSize(new ImageIcon("images/" + productName10 + ".jpg")));
 				String result10 = duration(timerTest.selectProduct().get(9).getEndTime(), now);
 				lblTime10.setText(result10);
 				break;

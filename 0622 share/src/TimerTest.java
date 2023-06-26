@@ -88,14 +88,14 @@ public class TimerTest implements ITimer {
 				String productContent = rs.getString("detailinfo");
 				Blob image = rs.getBlob("image");
 
-				File file = new File("E:\\사진테스트\\" + productName + ".jpg");
+				File file = new File("images/" + productName + ".jpg");
 				list.add(new Product(userId, productNo, productName, productPriceNow, productContent, null, null));
 
 				if (file.exists()) {
 					continue;
 				}
 
-				Files.copy(image.getBinaryStream(), Paths.get("E:\\사진테스트\\" + productName + ".jpg"));
+				Files.copy(image.getBinaryStream(), Paths.get("images/" + productName + ".jpg"));
 			}
 			rs.close();
 			stmt.close();
@@ -167,14 +167,14 @@ public class TimerTest implements ITimer {
 				Timestamp timestamp2 = rs.getTimestamp("deadline");
 				LocalDateTime endTime = timestamp2.toLocalDateTime();
 				
-				File file = new File("E:\\사진테스트\\" + productName + ".jpg");
+				File file = new File("images/" + productName + ".jpg");
 				list.add(new Product(productNo, productName, productPriceNow, productContent, startTime, endTime));
 
 				if (file.exists()) {
 					continue;
 				}
 
-				Files.copy(image.getBinaryStream(), Paths.get("E:\\사진테스트\\" + productName + ".jpg"));
+				Files.copy(image.getBinaryStream(), Paths.get("images/" + productName + ".jpg"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
